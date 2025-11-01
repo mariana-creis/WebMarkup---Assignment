@@ -1,1 +1,52 @@
-/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f2726;
+  padding: 10px 30px;
+}
+
+.logo img {
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item a {
+  color: #faf3e8;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.menu-item a.active {
+  font-weight: 600;
+}
+
+.menu-item a:hover {
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.contact-button {
+  text-decoration: none;
+  color: #faf3e8;
+  background-color: #c68a47;
+  padding: 0.5rem 2.88rem;
+  border-radius: 1.25em;
+}
+
+.contact-button:hover {
+  color: #c68a47;
+  background-color: #faf3e8;
+  border: 0.1rem solid #c68a47;
+}
