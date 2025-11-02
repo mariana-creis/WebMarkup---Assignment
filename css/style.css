@@ -50,3 +50,321 @@ body {
   background-color: #faf3e8;
   border: 0.1rem solid #c68a47;
 }
+
+section.hero-homepage {
+  background-image: url(../img/HomePage/Header.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100%;
+  padding: 8rem 2rem;
+  position: relative;
+  color: #faf3e8;
+  text-align: center;
+}
+
+section.hero-homepage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(183, 177, 177, 0.3);
+  z-index: 0;
+}
+
+section.hero-homepage article {
+  position: relative;
+  z-index: 1;
+}
+
+section.hero-homepage h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+section.hero-homepage h2 {
+  font-weight: 200;
+  margin-bottom: 3rem;
+}
+
+section.hero-homepage a.button {
+  background-color: #c68a47;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #faf3e8;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2em;
+  font-size: 0.9rem;
+}
+
+section.hero-homepage a.button:hover {
+  color: #2f2726;
+  background-color: #faf3e8;
+  border: 0.1rem solid #2f2726;
+}
+
+section.intro {
+  background-color: #faf3e8;
+  color: #2f2726;
+  text-align: center;
+  max-width: 80%;
+  margin: -4rem auto 5rem auto;
+  padding: 2rem 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+section.intro h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+section.intro span {
+  color: #c68a47;
+}
+
+section.intro p {
+  line-height: 150%;
+  padding: 0 4rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+/* -------------------------------
+   Why Learn Section
+--------------------------------- */
+
+section.why-learn {
+  text-align: center;
+  color: #2f2726;
+  margin-bottom: 3rem;
+}
+
+section.why-learn h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+section.why-learn > section {
+  display: inline-block;
+  width: 18rem;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+/* -------------------------------
+   What You'll Learn Section
+--------------------------------- */
+
+section.learn {
+  background-color: #faf3e8;
+  text-align: center;
+  color: #2f2726;
+  padding: 1rem;
+}
+
+section.learn > h3 {
+  font-size: 2rem;
+}
+
+section.learn > section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  margin: 1rem 10rem;
+}
+
+section.learn > section > section {
+  background-color: white;
+  border-radius: 1rem;
+  width: 18rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+section.learn img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  display: block;
+}
+
+section.learn h6 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2a1f19;
+  margin: 1rem 0 0.5rem 0;
+}
+
+section.learn p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1rem auto 2rem auto;
+  width: 70%;
+}
+
+section.learn a {
+  color: #faf3e8;
+  background-color: #2a1f19;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: 150ms ease-in-out;
+}
+
+section.learn a:hover {
+  background-color: #c68a47;
+}
+
+/* -------------------------------
+   Footer Section
+--------------------------------- */
+footer {
+  background-color: #2f2726;
+  color: #f8eadb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 0;
+  column-gap: 5rem;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+footer > section.about {
+  width: 9rem;
+}
+
+footer > section > p.title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+footer > section > p.content {
+  font-weight: 200;
+  line-height: 1.6em;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f8eadb;
+  display: inline-block;
+  margin-bottom: 0.2rem;
+}
+
+footer a:hover {
+  font-weight: 400;
+  transition: 150ms ease-in-out;
+}
+
+footer .follow-us {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .icons {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+footer .follow-us img {
+  width: 1.5rem;
+  height: auto;
+  margin-top: 0.3rem;
+}
+
+footer .copyright {
+  flex-basis: 100%;
+  text-align: center;
+  border-top: 1px solid #e9e1d8;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------
+Tools and Equipment Page
+------------------------------------------------------------------------------------------------------------------------------ */
+.hero-tools {
+  position: relative;
+  background-image: url("../img/Tools Page/Hero Image.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  padding: 4rem 2rem 10rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f8eadb;
+}
+
+.hero-tools::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 39, 38, 0.55);
+  z-index: 0;
+}
+
+.hero-tools article {
+  position: relative;
+  z-index: 1;
+  max-width: 50rem;
+}
+
+.hero-tools h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-tools p {
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+.hero-tools .button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #faf3e8;
+  background-color: #c68a47;
+  padding: 0.5rem 1rem;
+  border-radius: 1.25em;
+  transition: 150ms ease-in-out;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.hero-tools .button:hover {
+  color: #c68a47;
+  background-color: #faf3e8;
+  border: 0.1rem solid #c68a47;
+}
