@@ -349,6 +349,8 @@ Tools and Equipment Page
 .hero-tools p {
   font-weight: 200;
   margin-bottom: 2rem;
+  font-size: 1rem;
+  width: 40rem;
 }
 
 .hero-tools .button {
@@ -356,7 +358,7 @@ Tools and Equipment Page
   text-transform: uppercase;
   color: #faf3e8;
   background-color: #c68a47;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   border-radius: 1.25em;
   transition: 150ms ease-in-out;
   font-size: 0.8rem;
@@ -367,4 +369,276 @@ Tools and Equipment Page
   color: #c68a47;
   background-color: #faf3e8;
   border: 0.1rem solid #c68a47;
+}
+
+/* -------------------------------
+   The 5 Tools Every Begginner Needs
+--------------------------------- */
+body.tools-page {
+  background-color: #faf3e8;
+}
+.tools-section {
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.tools-section h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #2f2726;
+}
+
+.tools-section h3 span {
+  color: #c68a47;
+}
+
+.tool-item {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0;
+  overflow: hidden;
+  display: flow-root;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  height: 22rem;
+}
+
+.tool-item figure {
+  float: left;
+  width: 45%;
+  margin: 0 2.5rem 0 0;
+  line-height: 0;
+  padding: 0;
+}
+
+.tool-item img {
+  width: 100%;
+  height: auto;
+}
+
+.tool-item h6 {
+  font-size: 1.3rem;
+  color: #3b2f25;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  margin: 2rem 0 1rem 0;
+}
+
+.tools-section .button {
+  display: inline-block;
+  background-color: #2b241f;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.tools-section .button:hover {
+  transition: 150ms ease-in-out;
+  background-color: #c68a47;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------
+Beans and Grinds Page
+------------------------------------------------------------------------------------------------------------------------------ */
+.hero-beans {
+  position: relative;
+  background-image: url("/img/Beans Page/Hero Image.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  padding: 4rem 2rem 10rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f8eadb;
+}
+
+.hero-beans::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 39, 38, 0.55);
+  z-index: 0;
+}
+
+.hero-beans article {
+  position: relative;
+  z-index: 1;
+  max-width: 50rem;
+}
+
+.hero-beans h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-beans p {
+  font-weight: 200;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  width: 40rem;
+}
+
+.hero-beans .button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #faf3e8;
+  background-color: #c68a47;
+  padding: 0.5rem 1.8rem;
+  border-radius: 1.25em;
+  transition: 150ms ease-in-out;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.hero-beans .button:hover {
+  color: #c68a47;
+  background-color: #faf3e8;
+  border: 0.1rem solid #c68a47;
+}
+
+.choose-beans {
+  text-align: center;
+  background-color: #f7ede1;
+  padding: 4rem 1rem;
+}
+
+.choose-beans h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #2b241f;
+}
+
+.choose-beans h3::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 2px;
+  background-color: #c68a47;
+  margin: 0.5rem auto 0;
+}
+
+.choose-beans h3 span {
+  color: #c68a47;
+}
+
+.bean-card {
+  color: #2f2726;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 18rem;
+  vertical-align: middle;
+  text-align: left;
+  margin: 1rem;
+  line-height: 0.8rem;
+  position: relative;
+  padding: 1rem 1.5rem 1.2rem 2rem;
+}
+
+.bean-card p.bean-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.bean-icon {
+  width: 3rem;
+  height: auto;
+  vertical-align: middle;
+  margin: 0 1rem;
+}
+
+.bean-card p.description {
+  font-size: 0.89em;
+}
+
+/* ====== MATCHING GRIND SECTION ====== */
+
+.matching-grind {
+  text-align: center;
+  background-color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.matching-grind h3 {
+  font-size: 1.5rem;
+  color: #2b241f;
+  margin-bottom: 0.6rem;
+}
+
+.matching-grind h3 span {
+  color: #c68a47;
+}
+
+.matching-grind .subtitle {
+  font-size: 1.1rem;
+  color: #4b3d34;
+  margin: 0 0 2rem 0;
+  font-weight: 300;
+}
+
+.grind-table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fffaf4;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  text-align: center;
+  table-layout: fixed; /* makes all columns equal width */
+  width: 70%;
+}
+
+.grind-table thead th {
+  background-color: #c68a47;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 1.2rem;
+}
+
+.grind-table td {
+  padding: 1rem 1.2rem;
+  color: #2b241f;
+}
+
+.grind-table tbody tr {
+  background-color: #faf3e8;
+}
+
+.grind-table th,
+.grind-table td {
+  border-bottom: 1.5px solid #f8eadb;
+  border-left: 1.5px solid #f8eadb;
+}
+
+.grind-table thead tr:first-child th:first-child {
+  border-top-left-radius: 1rem;
+}
+
+.grind-table thead tr:first-child th:last-child {
+  border-top-right-radius: 1rem;
 }
