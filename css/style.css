@@ -1,6 +1,9 @@
 body {
   font-family: "Manrope", sans-serif;
+  letter-spacing: 0.5px;
 }
+
+/* ====== MENU SECTION ====== */
 
 .navbar {
   display: flex;
@@ -8,9 +11,6 @@ body {
   align-items: center;
   background-color: #2f2726;
   padding: 10px 30px;
-}
-
-.logo img {
 }
 
 .menu {
@@ -34,7 +34,7 @@ body {
 
 .menu-item a:hover {
   font-weight: 500;
-  transition: 0.3s ease;
+  transition: 150ms ease-in-out;
 }
 
 .contact-button {
@@ -43,6 +43,7 @@ body {
   background-color: #c68a47;
   padding: 0.5rem 2.88rem;
   border-radius: 1.25em;
+  transition: 150ms ease-in-out;
 }
 
 .contact-button:hover {
@@ -51,196 +52,15 @@ body {
   border: 0.1rem solid #c68a47;
 }
 
-section.hero-homepage {
-  background-image: url(../img/HomePage/Header.png);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  min-height: 100%;
-  padding: 8rem 2rem;
-  position: relative;
-  color: #faf3e8;
-  text-align: center;
-}
+/* ====== FOOTER SECTION ====== */
 
-section.hero-homepage::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(183, 177, 177, 0.3);
-  z-index: 0;
-}
-
-section.hero-homepage article {
-  position: relative;
-  z-index: 1;
-}
-
-section.hero-homepage h1 {
-  font-size: 3.5rem;
-  margin: 0;
-}
-
-section.hero-homepage h2 {
-  font-weight: 200;
-  margin-bottom: 3rem;
-}
-
-section.hero-homepage a.button {
-  background-color: #c68a47;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #faf3e8;
-  padding: 0.5rem 1.5rem;
-  border-radius: 2em;
-  font-size: 0.9rem;
-}
-
-section.hero-homepage a.button:hover {
-  color: #2f2726;
-  background-color: #faf3e8;
-  border: 0.1rem solid #2f2726;
-}
-
-section.intro {
-  background-color: #faf3e8;
-  color: #2f2726;
-  text-align: center;
-  max-width: 80%;
-  margin: -4rem auto 5rem auto;
-  padding: 2rem 2rem;
-  position: relative;
-  z-index: 2;
-}
-
-section.intro h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  margin-top: 0;
-}
-
-section.intro span {
-  color: #c68a47;
-}
-
-section.intro p {
-  line-height: 150%;
-  padding: 0 4rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-}
-
-/* -------------------------------
-   Why Learn Section
---------------------------------- */
-
-section.why-learn {
-  text-align: center;
-  color: #2f2726;
-  margin-bottom: 3rem;
-}
-
-section.why-learn h3 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-section.why-learn > section {
-  display: inline-block;
-  width: 18rem;
-  overflow: hidden;
-  padding: 0 1.5rem;
-}
-
-/* -------------------------------
-   What You'll Learn Section
---------------------------------- */
-
-section.learn {
-  background-color: #faf3e8;
-  text-align: center;
-  color: #2f2726;
-  padding: 1rem;
-}
-
-section.learn > h3 {
-  font-size: 2rem;
-}
-
-section.learn > section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  gap: 3rem;
-  margin: 1rem 10rem;
-}
-
-section.learn > section > section {
-  background-color: white;
-  border-radius: 1rem;
-  width: 18rem;
-  overflow: hidden;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  text-align: center;
-  padding-bottom: 3rem;
-}
-
-section.learn img {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-  display: block;
-}
-
-section.learn h6 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #2a1f19;
-  margin: 1rem 0 0.5rem 0;
-}
-
-section.learn p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin: 1rem auto 2rem auto;
-  width: 70%;
-}
-
-section.learn a {
-  color: #faf3e8;
-  background-color: #2a1f19;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 2rem;
-  padding: 0.75rem 2rem;
-  font-size: 0.8rem;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  transition: 150ms ease-in-out;
-}
-
-section.learn a:hover {
-  background-color: #c68a47;
-}
-
-/* -------------------------------
-   Footer Section
---------------------------------- */
 footer {
   background-color: #2f2726;
   color: #f8eadb;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  row-gap: 0;
-  column-gap: 5rem;
+  column-gap: 7rem;
   font-size: 0.8rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -280,6 +100,10 @@ footer a:hover {
   transition: 150ms ease-in-out;
 }
 
+footer a:visited {
+  color: #d3c2b0;
+}
+
 footer .follow-us {
   display: flex;
   flex-direction: column;
@@ -297,33 +121,231 @@ footer .follow-us img {
   margin-top: 0.3rem;
 }
 
-footer .copyright {
-  flex-basis: 100%;
-  text-align: center;
-  border-top: 1px solid #e9e1d8;
-  font-size: 0.8rem;
-  margin-top: 1rem;
+footer .copyright::before {
+  content: "";
+  display: block;
+  width: 50rem;
+  height: 1px;
+  background-color: #e9e1d8;
+  margin: 0.5rem auto 0;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------
-Tools and Equipment Page
------------------------------------------------------------------------------------------------------------------------------- */
-.hero-tools {
+footer .copyright {
   position: relative;
-  background-image: url("../img/Tools Page/Hero Image.png");
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+/* ================= HOMEPAGE SECTION ================= */
+
+/*---- HERO -----*/
+.hero-section.homepage {
+  background-image: url(../img/HomePage/Header.png);
   background-size: cover;
   background-position: center;
+  position: relative;
   min-height: 100%;
+  padding: 8rem 2rem;
+  position: relative;
+  color: #faf3e8;
+  text-align: center;
+}
+
+.hero-section.homepage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(183, 177, 177, 0.3);
+  z-index: 0;
+}
+
+.hero-section.homepage article {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.hero-section.homepage h2 {
+  font-weight: 200;
+  margin-bottom: 3rem;
+}
+
+.homepage-button {
+  background-color: #c68a47;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #faf3e8;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2em;
+  font-size: 0.9rem;
+  transition: 150ms ease-in-out;
+}
+
+.homepage-button:hover {
+  color: #2f2726;
+  background-color: #faf3e8;
+  border-color: #2f2726;
+  border-style: solid;
+  border-width: 0.1rem;
+}
+
+/*---- START YOUR BARISTA JOURNEY -----*/
+
+.intro-homepage {
+  background-color: #faf3e8;
+  color: #2f2726;
+  text-align: center;
+  max-width: 80%;
+  margin: -4rem auto 3rem auto;
+  padding: 2rem 2rem;
+  position: relative;
+  z-index: 2;
+  line-height: 1r.3em;
+  font-weight: 300;
+}
+
+.intro-homepage h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.caramel-text {
+  color: #c68a47;
+}
+
+.intro-homepage p {
+  line-height: 150%;
+  padding: 0 4rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-indent: 2em;
+}
+
+/*---- WHY LEARN HOW TO BREW AT HOME -----*/
+
+.why-learn {
+  text-align: center;
+  color: #2f2726;
+  margin-bottom: 3rem;
+}
+
+.sections-title {
+  font-size: 1.3rem;
+  font-weight: § 700;
+  text-align: center;
+  color: #2f2726;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.why-learn > section {
+  display: inline-block;
+  width: 18rem;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+/*---- WHAT YOU'LL LEARN-----*/
+
+.learn {
+  background-color: #faf3e8;
+  text-align: center;
+  color: #2f2726;
+  padding: 1rem;
+}
+
+.learn > section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  margin: 1rem 10rem;
+}
+
+.learn > section > section {
+  background-color: white;
+  border-radius: 1rem;
+  width: 18rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.learn figure {
+  margin: 0;
+  padding: 0;
+}
+
+.learn img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  display: block;
+}
+
+.learn h6 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2a1f19;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.learn p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1rem auto 2rem auto;
+  width: 70%;
+}
+
+.learn a {
+  color: #faf3e8;
+  background-color: #2f2726;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: 150ms ease-in-out;
+}
+
+.learn a:hover {
+  background-color: #c68a47;
+}
+
+/* ================= HERO SECTIONS ================= */
+
+.hero-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 10rem;
   padding: 4rem 2rem 10rem 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #f8eadb;
+  color: white;
 }
 
-.hero-tools::before {
+.hero-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -334,64 +356,68 @@ Tools and Equipment Page
   z-index: 0;
 }
 
-.hero-tools article {
+.hero-section article {
   position: relative;
   z-index: 1;
   max-width: 50rem;
 }
 
-.hero-tools h1 {
+.hero-section h1 {
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
-.hero-tools p {
+.hero-section p {
   font-weight: 200;
   margin-bottom: 2rem;
   font-size: 1rem;
-  width: 40rem;
+  line-height: 1.6rem;
 }
 
-.hero-tools .button {
+.hero-section .hero-button {
   text-decoration: none;
   text-transform: uppercase;
   color: #faf3e8;
   background-color: #c68a47;
-  padding: 0.5rem 2rem;
-  border-radius: 1.25em;
+  padding: 0.8rem 2rem;
+  border-radius: 2em;
   transition: 150ms ease-in-out;
   font-size: 0.8rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
-.hero-tools .button:hover {
+.hero-section .hero-button:hover {
   color: #c68a47;
   background-color: #faf3e8;
-  border: 0.1rem solid #c68a47;
+  border-color: #c48a3f;
+  border-style: solid;
+  border-width: 0.1rem;
 }
 
-/* -------------------------------
-   The 5 Tools Every Begginner Needs
---------------------------------- */
+/* ================= TOLLS AND EQUIPMENT PAGE ================= */
+
+/*---- HERO-----*/
+
+.hero-section.tools-page {
+  background-image: url("../img/Tools Page/Hero Image.png");
+}
+
+.hero-section.tools-page p {
+  width: 35rem;
+}
+
+/*---- THE 5 TOOLS-----*/
+
 body.tools-page {
   background-color: #faf3e8;
 }
 .tools-section {
-  max-width: 65rem;
+  max-width: 60rem;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem;
   text-align: center;
-}
-
-.tools-section h3 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  color: #2f2726;
-}
-
-.tools-section h3 span {
-  color: #c68a47;
+  line-height: 1.6em;
 }
 
 .tool-item {
@@ -404,7 +430,10 @@ body.tools-page {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   position: relative;
-  height: 22rem;
+}
+
+.tool-item strong {
+  font-weight: 600;
 }
 
 .tool-item figure {
@@ -422,10 +451,8 @@ body.tools-page {
 
 .tool-item h6 {
   font-size: 1.3rem;
-  color: #3b2f25;
-  margin-top: 1rem;
-  text-transform: uppercase;
-  margin: 2rem 0 1rem 0;
+  color: #2f2726;
+  margin: 1.2rem 0 0 0;
 }
 
 .tools-section .button {
@@ -437,7 +464,7 @@ body.tools-page {
   border-radius: 2rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   font-size: 0.8rem;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -447,82 +474,28 @@ body.tools-page {
   background-color: #c68a47;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------
-Beans and Grinds Page
------------------------------------------------------------------------------------------------------------------------------- */
-.hero-beans {
-  position: relative;
+/* ================= BEAND AND GRINDS PAGE ================= */
+
+/*---- HERO-----*/
+
+.hero-section.beans-page {
   background-image: url("/img/Beans Page/Hero Image.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100%;
-  padding: 4rem 2rem 10rem 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #f8eadb;
 }
 
-.hero-beans::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(47, 39, 38, 0.55);
-  z-index: 0;
+.hero-section.beans-page p {
+  width: 30rem;
 }
 
-.hero-beans article {
-  position: relative;
-  z-index: 1;
-  max-width: 50rem;
-}
-
-.hero-beans h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.hero-beans p {
-  font-weight: 200;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  width: 40rem;
-}
-
-.hero-beans .button {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #faf3e8;
-  background-color: #c68a47;
-  padding: 0.5rem 1.8rem;
-  border-radius: 1.25em;
-  transition: 150ms ease-in-out;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.hero-beans .button:hover {
-  color: #c68a47;
-  background-color: #faf3e8;
-  border: 0.1rem solid #c68a47;
-}
+/*---- CHOOSE BEANS -----*/
 
 .choose-beans {
   text-align: center;
   background-color: #f7ede1;
-  padding: 4rem 1rem;
+  padding: 1rem;
 }
 
 .choose-beans h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: #2b241f;
+  margin-bottom: 1rem;
 }
 
 .choose-beans h3::after {
@@ -534,8 +507,17 @@ Beans and Grinds Page
   margin: 0.5rem auto 0;
 }
 
-.choose-beans h3 span {
-  color: #c68a47;
+.beans-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.beans-row figure {
+  margin: 0;
 }
 
 .bean-card {
@@ -559,6 +541,7 @@ Beans and Grinds Page
   margin-bottom: 1.5rem;
   text-align: center;
   text-transform: capitalize;
+  margin-top: 1rem;
 }
 
 .bean-icon {
@@ -568,39 +551,40 @@ Beans and Grinds Page
   margin: 0 1rem;
 }
 
-.bean-card p.description {
-  font-size: 0.89em;
+.bean-card em {
+  font-style: normal;
+  font-weight: 600;
 }
 
-/* ====== MATCHING GRIND SECTION ====== */
+.bean-card p.description {
+  font-size: 0.89em;
+  text-indent: 15px;
+}
+
+/*---- MATCHING GRINDS -----*/
 
 .matching-grind {
   text-align: center;
   background-color: #fff;
-  margin-top: 1.5rem;
   margin-bottom: 3rem;
+  margin-top: 2.5rem;
 }
 
 .matching-grind h3 {
-  font-size: 1.5rem;
-  color: #2b241f;
-  margin-bottom: 0.6rem;
-}
-
-.matching-grind h3 span {
-  color: #c68a47;
+  margin-bottom: 0.5rem;
 }
 
 .matching-grind .subtitle {
   font-size: 1.1rem;
   color: #4b3d34;
-  margin: 0 0 2rem 0;
   font-weight: 300;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
-.grind-table {
+.table {
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 5rem auto;
   border-collapse: collapse;
   border-spacing: 0;
   background-color: #fffaf4;
@@ -613,101 +597,45 @@ Beans and Grinds Page
   width: 70%;
 }
 
-.grind-table thead th {
+.table thead th {
   background-color: #c68a47;
   color: #fff;
   font-weight: 600;
   padding: 1rem 1.2rem;
 }
 
-.grind-table td {
+.table td {
   padding: 1rem 1.2rem;
   color: #2b241f;
 }
 
-.grind-table tbody tr {
+.table tbody tr {
   background-color: #faf3e8;
 }
 
-.grind-table th,
-.grind-table td {
+.table th,
+.table td {
   border-bottom: 1.5px solid #f8eadb;
   border-left: 1.5px solid #f8eadb;
 }
 
-.grind-table thead tr:first-child th:first-child {
+.table thead tr:first-child th:first-child {
   border-top-left-radius: 1rem;
 }
 
-.grind-table thead tr:first-child th:last-child {
+.table thead tr:first-child th:last-child {
   border-top-right-radius: 1rem;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------
-Classic Recipes Page
------------------------------------------------------------------------------------------------------------------------------- */
+/* ================= CLASSIC RECIPES PAGE ================= */
 
-.hero-recipes {
-  position: relative;
+/*---- HERO-----*/
+.hero-section.recipes-page {
   background-image: url("../img/Recipes Page/Hero Image.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100%;
-  padding: 4rem 2rem 10rem 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #f8eadb;
 }
 
-.hero-recipes::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(47, 39, 38, 0.55);
-  z-index: 0;
-}
-
-.hero-recipes article {
-  position: relative;
-  z-index: 1;
-  max-width: 50rem;
-}
-
-.hero-recipes h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.hero-recipes p {
-  font-weight: 200;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  width: 35rem;
-}
-
-.hero-recipes .button {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #faf3e8;
-  background-color: #c68a47;
-  padding: 0.5rem 2rem;
-  border-radius: 1.25em;
-  transition: 150ms ease-in-out;
-  font-size: 0.8rem;
-  font-weight: 800;
-}
-
-.hero-tools .button:hover {
-  color: #c68a47;
-  background-color: #faf3e8;
-  border: 0.1rem solid #c68a47;
+.hero-section.recipes-page p {
+  width: 30rem;
 }
 
 /* ====== RECIPES SECTION ====== */
@@ -716,16 +644,6 @@ Classic Recipes Page
   background-color: #f6f0e7;
   text-align: center;
   padding: 2rem 2rem;
-}
-
-.recipes h3 {
-  font-size: 1.5rem;
-  color: #2b241f;
-  margin-bottom: 3rem;
-}
-
-.recipes h3 span {
-  color: #c68a47;
 }
 
 .recipes h3::after {
@@ -757,6 +675,11 @@ Classic Recipes Page
   text-align: left;
   height: 38rem;
   color: #2f2726;
+}
+
+.recipe-card figure {
+  margin: 0;
+  padding: 0;
 }
 
 .recipe-image {
@@ -804,71 +727,14 @@ Classic Recipes Page
   padding-left: 2rem;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------
-Tecnniques Page
------------------------------------------------------------------------------------------------------------------------------- */
-.hero-techniques {
-  position: relative;
+/* ================= TECHNIQUES PAGE ================= */
+
+/*---- HERO-----*/
+.hero-section.techniques-page {
   background-image: url("../img/Techniques Page/Hero.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100%;
-  padding: 4rem 2rem 10rem 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #f8eadb;
 }
 
-.hero-techniques::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(47, 39, 38, 0.55);
-  z-index: 0;
-}
-
-.hero-techniques article {
-  position: relative;
-  z-index: 1;
-  max-width: 50rem;
-}
-
-.hero-techniques h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.hero-techniques p {
-  font-weight: 200;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  width: 40rem;
-}
-
-.hero-techniques .button {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #faf3e8;
-  background-color: #c68a47;
-  padding: 0.5rem 2rem;
-  border-radius: 1.25em;
-  transition: 150ms ease-in-out;
-  font-size: 0.8rem;
-  font-weight: 800;
-}
-
-.hero-tools .button:hover {
-  color: #c68a47;
-  background-color: #faf3e8;
-  border: 0.1rem solid #c68a47;
-}
+/*---- MASTER THE TECHNIQUES SECTION -----*/
 
 .techniques {
   background-color: #f6f0e7;
@@ -876,14 +742,13 @@ Tecnniques Page
   padding: 2rem 2rem;
 }
 
-.techniques h3 {
-  font-size: 1.5rem;
-  color: #2b241f;
-  margin-bottom: 2rem;
-}
-
-.techniques h3 span {
-  color: #c68a47;
+.techniques h3::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 2px;
+  background-color: #c68a47;
+  margin: 1rem auto 0;
 }
 
 .technique-card {
@@ -902,8 +767,14 @@ Tecnniques Page
   margin-bottom: 0.8rem;
 }
 
-.technique-card h4 span {
-  color: #c68a47;
+.technique-card {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+.technique-card strong {
+  font-weight: 600;
 }
 
 .technique-card li {
@@ -917,78 +788,23 @@ Tecnniques Page
   margin-top: 1rem;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------
-Tips and Tricks Page
------------------------------------------------------------------------------------------------------------------------------- */
-.hero-tips {
-  position: relative;
+/* ================= TIPS AND TRICKS PAGE ================= */
+
+/*---- HERO-----*/
+.hero-section.tips-page {
   background-image: url("../img/Tips Page/Hero.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100%;
-  padding: 3rem 2rem 10rem 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #f8eadb;
 }
 
-.hero-tips::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(47, 39, 38, 0.55);
-  z-index: 0;
+.hero-section.tips-page p {
+  width: 30rem;
 }
 
-.hero-tips article {
-  position: relative;
-  z-index: 1;
-  max-width: 50rem;
-}
-
-.hero-tips h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.hero-tips p {
-  font-weight: 200;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  width: 40rem;
-}
-
-.hero-tips .button {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #faf3e8;
-  background-color: #c68a47;
-  padding: 0.5rem 2rem;
-  border-radius: 1.25em;
-  transition: 150ms ease-in-out;
-  font-size: 0.8rem;
-  font-weight: 800;
-}
-
-.hero-tips .button:hover {
-  color: #c68a47;
-  background-color: #faf3e8;
-  border: 0.1rem solid #c68a47;
-}
-
-/* ====== TIPS & TRICKS SECTION ====== */
+/*---- TIPS AND TRICKS-----*/
 
 .tips {
   background-color: #f6f0e7;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 1rem 2rem 4rem 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -997,13 +813,7 @@ Tips and Tricks Page
 
 .tips h3 {
   width: 100%;
-  font-size: 1.5rem;
-  color: #2b241f;
-  margin-bottom: 2.5rem;
-}
-
-.tips h3 span {
-  color: #c68a47;
+  margin-bottom: 0;
 }
 
 .tips h3::after {
@@ -1067,71 +877,27 @@ Tips and Tricks Page
   line-height: 1.6;
 }
 
-/* ----- Troubleshooting Guide ----- */
+/*---- TROUBLESHOOTING GUIDE-----*/
 
 .troubleshooting-guide {
   text-align: center;
   background-color: #fff;
-  padding: 3rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
-.troubleshooting-guide h5 {
-  font-size: 1.8rem;
-  color: #3b2f25;
-  margin-bottom: 0.5rem;
-}
-
-.troubleshooting-guide h5 span {
-  color: #c68a47;
+.troubleshooting-guide h3 {
+  margin-bottom: 0;
 }
 
 .troubleshooting-guide p {
   color: #3b2f25;
   font-size: 1rem;
   margin-bottom: 2rem;
+  margin-top: 0.7rem;
 }
 
-.troubleshooting-table {
-  width: 70%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  background-color: #fffaf4;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.troubleshooting-table thead th {
-  background-color: #c68a47;
-  color: #fff;
-  font-weight: 600;
-  padding: 1rem 1.2rem;
-}
-
-.troubleshooting-table td {
-  padding: 1rem 1.2rem;
-  color: #3b2f25;
-}
-
-.troubleshooting-table tbody tr {
-  background-color: #faf3e8;
-}
-
-.troubleshooting-table th,
-.troubleshooting-table td {
-  border-bottom: 1.5px solid #f8eadb;
-  border-left: 1.5px solid #f8eadb;
-}
-
-.troubleshooting-table thead tr:first-child th:first-child {
-  border-top-left-radius: 1rem;
-}
-
-.troubleshooting-table thead tr:first-child th:last-child {
-  border-top-right-radius: 1rem;
+.troubleshooting-guide table {
+  margin-bottom: 2rem;
 }
 
 /* ----- Contact Us ----- */
@@ -1139,100 +905,197 @@ Tips and Tricks Page
 .contact-us {
   background-color: #f6f0e7;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
-.contact-us h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: #3b2f25;
-}
-
-.contact-us h3 span {
-  color: #c68a47;
-}
-
-.contact-card {
+.contact-container {
   background-color: #fff;
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  width: 80%;
+  width: 60rem;
   margin: 0 auto;
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 2.5rem;
+  align-items: flex-start;
+  gap: 5rem;
+  flex-wrap: wrap;
   text-align: left;
 }
 
 .contact-info {
-  flex: 1;
+  flex-basis: 35%; /* smaller left column */
+  max-width: 21rem;
+  color: #2b241f;
   line-height: 1.6;
-  color: #3b2f25;
+}
+
+.contact-form {
+  flex: 0 0 55%; /* larger right column */
+  max-width: 30rem;
 }
 
 .contact-info h5 {
   font-size: 1.2rem;
   color: #2b241f;
-  border-bottom: 2px solid #c68a47;
-  padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact-info h5::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 25rem;
+  background-color: #c68a47;
+  margin: 0.5rem auto 0;
+  align-content: center;
 }
 
 .contact-info p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  width: 25rem;
 }
 
-.contact-form {
+.contact-info aside.icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contact-form fieldset {
+  border: white;
+  margin: 0;
+  padding: 0;
+}
+
+.name-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.name-field {
   flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem;
+  min-width: 10rem;
+}
+
+.name-field label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.name-field input {
+  width: 100%;
+  border: 1px solid #c68a47;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.95rem;
 }
 
 .contact-form label {
+  display: block;
   font-size: 0.95rem;
   color: #2b241f;
-  grid-column: span 1;
+  margin-top: 1rem;
 }
 
 .contact-form span {
   color: #c68a47;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
+.contact-form input,
 .contact-form textarea {
   width: 100%;
   border: 1px solid #c68a47;
   border-radius: 0.4rem;
   padding: 0.5rem;
-  font-size: 0.95rem;
-  color: #2b241f;
   font-family: inherit;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
 }
 
-.contact-form input[type="email"],
-.contact-form input[type="text"]#subject,
-.contact-form textarea {
-  grid-column: span 2;
-}
-
-.contact-form input[type="submit"] {
-  grid-column: span 2;
-  background-color: #b9935a;
+.contact-form input.form-button {
+  width: 31rem;
+  margin-top: 1.5rem;
+  background-color: #c68a47;
   color: #fff;
   border: none;
   border-radius: 2rem;
   padding: 0.8rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 150ms ease-in-out;
 }
 
-.contact-form input[type="submit"]:hover {
-  background-color: #b9935a;
-  transform: translateY(-2px);
+.contact-form input.form-button:hover {
+  background-color: #2f2726;
+}
+
+/* ================= MESSAGE SENT PAGE ================= */
+.message-sent {
+  background-color: #e9e1d8;
+  margin: 0;
+  padding: 5rem;
+}
+
+.message-sent section.card {
+  background-color: white;
+  text-align: center;
+  align-content: center;
+  width: 20rem;
+  margin: auto;
+  padding: 4rem 2rem 7rem 2rem;
+  border-radius: 2rem;
+}
+
+/* ================= COOKIES ================= */
+.cookies {
+  position: fixed;
+  bottom: 0;
+  width: 50rem;
+  background-color: #2f2726;
+  color: #f8eadb;
+  text-align: center;
+  padding: 1.2rem;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 9999;
+}
+
+.cookies-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #c68a47;
+  margin: 0;
+  width: 100%;
+}
+
+.cookies p {
+  margin: auto;
+  max-width: 45rem;
+  line-height: 1.4;
+}
+
+.cookies button {
+  background-color: #c68a47;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 150ms ease-in-out;
+}
+
+.cookies button:hover {
+  background-color: #f8eadb;
+  color: #2f2726;
 }

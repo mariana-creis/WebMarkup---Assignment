@@ -10,16 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/Favicon dark 1.png" />
+
+    <meta
+      name="description"
+      content="Tips and Tricks to help you become a home barista."
+    />
+    <meta
+      name="keywords"
+      content="coffee, coffee beans, barista, brewing, coffee tools, coffee recipes, grinds "
+    />
     <meta name="Author" content="Mariana Reis" />
-    <title>My Coffee Corner</title>
+    <title>Tips and Tricks</title>
   </head>
   <body>
     <header>
+      <!-- MENU SECTION -->
       <nav class="navbar">
         <a href="index.html" class="logo">
-          <img src="img/Logo 1 - dark.png" alt="" title="" />
+          <img
+            src="img/Logo 1 - dark.png"
+            alt="logo with two coffee beans"
+            title="logo"
+          />
         </a>
         <ul class="menu">
           <li class="menu-item">
@@ -41,32 +55,34 @@
             <a href="tips.html" class="active">Tips and Tricks</a>
           </li>
           <li>
-            <a href="" class="contact-button">Contact us</a>
+            <a href="tips.html#contact" class="contact-button">Contact us</a>
           </li>
         </ul>
       </nav>
-      <section class="hero-tips">
+
+      <!-- HERO SECTION -->
+      <section class="hero-section tips-page">
         <article>
           <h1>Tips and Tricks</h1>
           <p>
-            Even with the right tools and recipes, it’s technique that
-            transforms Even the best beans and equipment can’t save a coffee
-            ruined by small mistakes. The good news? A few simple tricks can
-            instantly improve your results. Here you’ll learn how to avoid
-            common beginner errors, fix brewing problems, and get the most out
-            of your setup. These simple skills will help you brew smoother
-            espresso, steam milk like a pro, and pour drinks that taste (and
-            look) amazing.
+            Even the best beans and equipment can’t save a coffee ruined by
+            small mistakes. The good news? A few simple tricks can instantly
+            improve your results. Here you’ll learn how to avoid common beginner
+            errors, fix brewing problems, and get the most out of your setup.
           </p>
-          <a href="" class="button">Check Tips &amp; Tricks</a>
+          <a href="#tips" class="hero-button">Check Tips &amp; Tricks</a>
         </article>
       </section>
     </header>
 
-    <section class="tips">
-      <h3>Tips &amp; Tricks for <span>Better Coffee</span> at Home</h3>
+    <!-- TIPS AND TRICKS SECTION -->
+    <aside class="tips" id="tips">
+      <h3 class="sections-title">
+        Tips &amp; Tricks for <span class="caramel-text">Better Coffee</span> at
+        Home
+      </h3>
       <section class="tip-card">
-        <h5>Avoiding <span>Mistakes</span></h5>
+        <h5>Avoiding <span class="caramel-text">Mistakes</span></h5>
         <p>
           Many beginners trip up on the same details. Avoid these, and your
           coffee instantly improves.
@@ -82,7 +98,7 @@
         </ul>
       </section>
       <section class="tip-card">
-        <h5>Quick <span>Wins</span></h5>
+        <h5>Quick <span class="caramel-text">Wins</span></h5>
         <p>Simple habits that elevate your coffee without extra effort.</p>
         <ul>
           <li>Warm your cup before pouring to keep drinks hot longer.</li>
@@ -92,12 +108,15 @@
           <li>Start with a 1:15 coffee-to-water ratio for balanced taste.</li>
         </ul>
       </section>
-    </section>
+    </aside>
 
+    <!-- TROUBLESHOOTING GUIDE SECTION -->
     <section class="troubleshooting-guide">
-      <h5><span>Troubleshooting</span> Guide</h5>
+      <h3 class="sections-title">
+        <span class="caramel-text">Troubleshooting</span> Guide
+      </h3>
       <p>When something goes wrong, check this quick-fix table,</p>
-      <table class="troubleshooting-table">
+      <table class="table">
         <thead>
           <tr>
             <th>Problem</th>
@@ -131,10 +150,14 @@
       </table>
     </section>
 
-    <section class="contact-us">
-      <h3><span>Contact</span> Us</h3>
+    <!-- CONTACT USSECTION -->
 
-      <section class="contact-card">
+    <section class="contact-us">
+      <h3 class="sections-title">
+        <span class="caramel-text">Contact</span> Us
+      </h3>
+
+      <section class="contact-container" id="contact">
         <article class="contact-info">
           <h5>We Love Talking Coffee</h5>
           <p>Do you have any questions?</p>
@@ -149,18 +172,40 @@
           </p>
           <p>Contact us by filling the form..</p>
           <p>You can also follow us on our social media:</p>
+          <aside class="icons">
+            <a href="https://www.instagram.com/">
+              <img
+                src="img/Tips Page/Instagram Icon.svg"
+                alt="instagram icon"
+                title="instagram icon"
+              />
+            </a>
+            <a href="https://www.youtube.com/">
+              <img
+                src="img/Tips Page/Youtube Icon.svg"
+                alt="youtube icon"
+                title="youtube icon"
+              />
+            </a>
+          </aside>
         </article>
 
-        <form class="contact-form" action="" method="">
-          <label for="first-name">First Name <span>*</span></label>
-          <input type="text" id="first-name" name="first-name" required />
-
-          <label for="last-name">Last Name <span>*</span></label>
-          <input type="text" id="last-name" name="last-name" required />
-
-          <label for="email">Email <span>*</span></label>
-          <input type="email" id="email" name="email" required />
-
+        <form class="contact-form" action="thankYou.html" method="get">
+          <fieldset>
+            <legend></legend>
+            <section class="name-row">
+              <section class="name-field">
+                <label for="first-name">First Name <span>*</span></label>
+                <input type="text" id="first-name" name="first-name" required />
+              </section>
+              <section class="name-field">
+                <label for="last-name">Last Name <span>*</span></label>
+                <input type="text" id="last-name" name="last-name" required />
+              </section>
+            </section>
+            <label for="email">Email <span>*</span></label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
           <label for="subject">Subject</label>
           <input type="text" id="subject" name="subject" />
 
@@ -173,7 +218,7 @@
             required
           ></textarea>
 
-          <button type="submit">Send Message</button>
+          <input type="submit" value="Send Message" class="form-button" />
         </form>
       </section>
     </section>
@@ -228,10 +273,18 @@
         <p class="title">Follow Us</p>
         <section class="icons">
           <a href="https://www.instagram.com/">
-            <img src="img/Instagram Icon - Foote.svg" alt="" title="" />
+            <img
+              src="img/Instagram Icon - Foote.svg"
+              alt="instagram icon"
+              title="instagram icon"
+            />
           </a>
           <a href="https://www.youtube.com/">
-            <img src="img/Youtube Icon - Footer.svg" alt="" title="" />
+            <img
+              src="img/Youtube Icon - Footer.svg"
+              alt="youtube icon"
+              title="youtube icon"
+            />
           </a>
         </section>
       </section>
