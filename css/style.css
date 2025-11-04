@@ -582,7 +582,7 @@ footer .copyright {
 /*---- HERO-----*/
 
 .hero-section.tools-page {
-  background-image: url("../img/Tools Page/Hero Image.png");
+  background-image: url("../img/Tools-Page/Hero-Image.png");
 }
 
 /*---- THE 5 TOOLS-----*/
@@ -708,7 +708,7 @@ body.tools-page {
 /*---- HERO-----*/
 
 .hero-section.beans-page {
-  background-image: url("/img/Beans Page/Hero Image.png");
+  background-image: url("/img/Beans-Page/Hero-Image.png");
 }
 
 .hero-section.beans-page p {
@@ -880,7 +880,7 @@ body.tools-page {
 
 /*---- HERO-----*/
 .hero-section.recipes-page {
-  background-image: url("../img/Recipes Page/Hero Image.png");
+  background-image: url("../img/Recipes-Page/Hero-Image.png");
 }
 
 .hero-section.recipes-page p {
@@ -1008,7 +1008,7 @@ body.tools-page {
 
 /*---- HERO-----*/
 .hero-section.techniques-page {
-  background-image: url("../img/Techniques Page/Hero.png");
+  background-image: url("../img/Techniques-Page/Hero.png");
 }
 
 /*---- MASTER THE TECHNIQUES SECTION -----*/
@@ -1090,7 +1090,7 @@ body.tools-page {
 
 /*---- HERO-----*/
 .hero-section.tips-page {
-  background-image: url("../img/Tips Page/Hero.png");
+  background-image: url("../img/Tips-Page/Hero.png");
 }
 
 .hero-section.tips-page p {
