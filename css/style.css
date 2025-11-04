@@ -13,6 +13,21 @@ body {
   padding: 10px 30px;
 }
 
+.menu-hamburger {
+  background: none;
+  border: none;
+  display: none;
+}
+
+.menu-hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #faf3e8;
+  transition: all 0.3s ease;
+}
+
 .menu {
   list-style: none;
   display: flex;
@@ -52,6 +67,47 @@ body {
   border: 0.1rem solid #c68a47;
 }
 
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #2f2726;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em 0;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-hamburger {
+    display: block;
+  }
+
+  .menu-item a {
+    display: block;
+    padding: 10px;
+  }
+
+  .contact-button {
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu {
+    display: flex;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+}
 /* ====== FOOTER SECTION ====== */
 
 footer {
@@ -139,6 +195,45 @@ footer .copyright {
   padding-top: 1rem;
 }
 
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    row-gap: 1.5rem;
+    column-gap: 0;
+    padding: 2rem 1.5rem;
+  }
+
+  footer > section.about,
+  footer > section,
+  footer .follow-us {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  footer .icons {
+    justify-content: left;
+  }
+
+  footer .copyright {
+    display: none;
+  }
+
+  footer .copyright::before {
+    display: none;
+  }
+
+  @media (min-width: 769px) {
+    footer {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 7rem;
+      padding: 2rem 4rem;
+    }
+  }
+}
+
 /* ================= HOMEPAGE SECTION ================= */
 
 /*---- HERO -----*/
@@ -152,6 +247,10 @@ footer .copyright {
   position: relative;
   color: #faf3e8;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-section.homepage::before {
@@ -234,6 +333,49 @@ footer .copyright {
   text-indent: 2em;
 }
 
+@media (max-width: 768px) {
+  .hero-section.homepage {
+    padding: 6rem 1.5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section.homepage h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .homepage-button {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .intro-homepage {
+    max-width: 90%;
+    margin: -3rem auto 2rem auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .intro-homepage h3 {
+    font-size: 1.5rem;
+  }
+
+  .intro-homepage p {
+    padding: 0 1rem;
+    line-height: 1.6rem;
+    text-indent: 1.5em;
+  }
+}
+
+/* === PC VIEW (>768px) === */
+@media (min-width: 769px) {
+  .intro-homepage {
+    max-width: 80%;
+  }
+}
+
 /*---- WHY LEARN HOW TO BREW AT HOME -----*/
 
 .why-learn {
@@ -244,7 +386,7 @@ footer .copyright {
 
 .sections-title {
   font-size: 1.3rem;
-  font-weight: § 700;
+  font-weight: 700;
   text-align: center;
   color: #2f2726;
   text-transform: uppercase;
@@ -329,6 +471,24 @@ footer .copyright {
   background-color: #c68a47;
 }
 
+@media (max-width: 768px) {
+  .learn > section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 2rem;
+  }
+
+  .learn > section > section {
+    width: 60%;
+    padding-bottom: 3rem;
+  }
+
+  .learn img {
+    height: 14rem;
+  }
+}
+
 /* ================= HERO SECTIONS ================= */
 
 .hero-section {
@@ -395,6 +555,28 @@ footer .copyright {
   border-width: 0.1rem;
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 6rem 1.5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+    margin: 0 auto 2rem auto;
+    max-width: 90%;
+  }
+
+  .hero-section .hero-button {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
 /* ================= TOLLS AND EQUIPMENT PAGE ================= */
 
 /*---- HERO-----*/
@@ -403,15 +585,12 @@ footer .copyright {
   background-image: url("../img/Tools Page/Hero Image.png");
 }
 
-.hero-section.tools-page p {
-  width: 35rem;
-}
-
 /*---- THE 5 TOOLS-----*/
 
 body.tools-page {
   background-color: #faf3e8;
 }
+
 .tools-section {
   max-width: 60rem;
   margin: 0 auto;
@@ -472,6 +651,56 @@ body.tools-page {
 .tools-section .button:hover {
   transition: 150ms ease-in-out;
   background-color: #c68a47;
+}
+
+@media (max-width: 768px) {
+  .tools-section {
+    padding: 1rem 1.5rem;
+    text-align: left;
+  }
+
+  .tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .tool-item figure {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .tool-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .tool-item h6 {
+    font-size: 1.5rem;
+    margin: 1rem auto 0 auto;
+  }
+
+  .tool-item p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .tools-section .button {
+    margin: 1.5rem auto 2rem auto;
+    font-size: 1rem;
+    padding: 0.6rem 1.4rem;
+  }
 }
 
 /* ================= BEAND AND GRINDS PAGE ================= */
@@ -559,6 +788,26 @@ body.tools-page {
 .bean-card p.description {
   font-size: 0.89em;
   text-indent: 15px;
+}
+
+@media (max-width: 768px) {
+  .beans-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .bean-card {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .bean-card p.bean-name {
+    text-align: center;
+  }
+
+  .choose-beans h3::after {
+    width: 8rem;
+  }
 }
 
 /*---- MATCHING GRINDS -----*/
@@ -727,6 +976,34 @@ body.tools-page {
   padding-left: 2rem;
 }
 
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .recipe-card {
+    width: 90%;
+    max-width: 25rem;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .recipe-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .recipe-name {
+    font-size: 1.3rem;
+  }
+
+  .recipe-subtitle {
+    font-size: 1rem;
+  }
+}
+
 /* ================= TECHNIQUES PAGE ================= */
 
 /*---- HERO-----*/
@@ -767,6 +1044,15 @@ body.tools-page {
   margin-bottom: 0.8rem;
 }
 
+.techniques h4::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 2px;
+  background-color: #c68a47;
+  margin: 0.5rem 0 0;
+}
+
 .technique-card {
   font-size: 1rem;
   font-weight: 300;
@@ -786,6 +1072,18 @@ body.tools-page {
   height: auto;
   border-radius: 0.8rem;
   margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .technique-card {
+    max-width: 25rem;
+    margin: 0 auto 2rem;
+    line-height: 1.5rem;
+  }
+
+  .technique-card h4 {
+    font-size: 1.2rem;
+  }
 }
 
 /* ================= TIPS AND TRICKS PAGE ================= */
@@ -1034,6 +1332,37 @@ body.tools-page {
 
 .contact-form input.form-button:hover {
   background-color: #2f2726;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    gap: 2rem;
+  }
+
+  .contact-info {
+    max-width: 100%;
+  }
+
+  .contact-info h5::after {
+    width: 10rem;
+    margin: 0.5rem auto;
+  }
+
+  .contact-info p {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form input.form-button {
+    width: 100%;
+  }
 }
 
 /* ================= MESSAGE SENT PAGE ================= */
