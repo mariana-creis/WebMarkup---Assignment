@@ -1,5 +1,5 @@
-Student name: your name 
-Student number: your student number
-Student class: your class
-GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+Student name: Mariana da Costa Reis
+Student number: 739069
+Student class: HAIT25FT1b
+GitHub Repository: https://github.com/mariana-creis/WebMarkup---Assignment
+GitHub Pages URL: https://mariana-creis.github.io/WebMarkup---Assignment/
